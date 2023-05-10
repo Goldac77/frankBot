@@ -5,6 +5,7 @@ const envContent = `
 TOKEN="YOUR_BOT_TOKEN"
 CLIENTID="YOUR_BOT_APPLICATION_ID"
 GUILDID="YOUR_SERVER_ID"
+ADMINID="SERVER_ADMIN_USER_ID"
 `;
 
 // Write the content to the .env file
