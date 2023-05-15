@@ -21,6 +21,4 @@ module.exports = {
             await interaction.reply({content: `Oopsie, you aren't an Admin...`, ephemeral: true});
         }
     },
-
-    botBannedUsersId: botBannedUsersId
 }
