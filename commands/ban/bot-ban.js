@@ -17,6 +17,8 @@ module.exports = {
         if(interaction.user.id === adminId){
             const user = interaction.options.getUser("user");
             await interaction.reply(`${user} you are banned from using the bot`);
+
+            // TODO: STORE BANNED USER'S ID IN A DATABASE
         } else {
             await interaction.reply({content: `Oopsie, you aren't an Admin...`, ephemeral: true});
         }
