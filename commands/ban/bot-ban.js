@@ -16,7 +16,7 @@ module.exports = {
     async execute(interaction) {
         if(interaction.user.id === adminId){
             const user = interaction.options.getUser("user");
-            await interaction.reply(`${user} you are banned from using the bot`);
+            await interaction.reply({content: "This feature is not yet fully implemented", ephemeral: true});
 
             // TODO: STORE BANNED USER'S ID IN A DATABASE
         } else {
