@@ -13,6 +13,9 @@ module.exports = {
     
     async execute(interaction) {
         const minutes = interaction.options.getInteger('reminder-minutes');
+        if(minutes <= 0) {
+            interaction.reply({content: `Beep boop!, you need to enter at least 1 minute`, ephemeral: true});
+        }
         interaction.reply({content: `Beep boop!, you will be reminded in ${minutes}.01 minutes`, ephemeral: true});
 
         setTimeout(() => {
